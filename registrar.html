@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Regístrate</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro Nueva Coder</title>
+  </head>
+  <body>
+    <h3>Regístrate llenando este formulario</h3>
+    <br>
+    <form id="form-registrar">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="registro" id="nombre" placeholder="Escribe aquí tu nombre">
+      <br>
+      <span></span>
+      <br><br>
+      <label for="apellido">Apellido:</label>
+      <input type="text" class="registro" id="apellido" placeholder="Escribe aquí tu apellido">
+      <br>
+      <span></span>
+      <br><br>
+      <label for="correo">Correo:</label>
+      <input type="text" class="registro" name="correo" id="correo" placeholder="name@dominio.com">
+      <br>
+      <span id="formato-correo"></span>
+      <br><br>
+      <label for="password">Contraseña:</label>
+      <input type="password" class="registro" name="password" id="password">
+      <br>
+      <span id="formato-pass"></span>
+      <br><br>
+      <button type="submit" id="registrar" form="form-registrar">Regístrate</button>
+      <br><br>
+      <span id="obligatorio"></span>
+    </form>
+    <script type="text/javascript" src="js/registrar.js"></script>
+  </body>
 </html>
